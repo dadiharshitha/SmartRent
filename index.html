@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sellers</title>
-    <link rel="stylesheet"href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
 <style>
-    body{
-background-image: url('https://static.vecteezy.com/system/resources/thumbnails/005/327/845/small/hand-holding-house-model-in-blue-background-for-refinance-plan-and-real-estate-concept-free-photo.jpg');
-background-repeat: no-repeat;
-height: 100vh;
-background-size: cover;
+    .container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-part, .right-part {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+}
+
+.left-part{
+  background-color: #0e72ed; 
+  padding: 250px;
+
+}
+.right-part {
+  background-color: #b3e163; 
+  padding: 250px;
+}
+.clkbtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,
+            rgb(255, 195, 110),
+            rgb(255, 146, 91));
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
 }
 </style>
 </head>
-
-
 <body>
-    <header>
-        <h1 class="heading">Sellers</h1>
-        <h3 class="title"> Login & Signup Form</h3>
-    </header>
+    <marquee><h1>Smart Rent-A web-based platform for Affordable and Informed Rental Housing</h1></marquee>
+    <div class="container">
+      <div class="left-part">
+        <!-- Content for the left part -->
+         <img src="data:image/jpeg;base64,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" height="200" width="300" style="margin-top: 0%;">
+        
+         <form action="selllogin1.html">
+          <button class="clkbtn">Sellers Login</button>
+          </form>
 
-       <div class="container">
-
-            <div class="slider"></div>
-            <div class="btn">
-            <button class="login">Login</button>
-            <button class="signup">Signup</button>
-        </div>
-
-        <div class="form-section">
-
-            <div class="login-box">
-                <font size="5" color="blue">Email</font>
-                <input type="email" class="email ele" placeholder="youremail@email.com" required>
-                        <font size="5" color="red">Password</font>
-                <input type="password"class="password ele" placeholder="password" required>
-                <form action="index.html">
-                    <button class="clkbtn">Login</button>
-            </div>
-
-            <div class="signup-box">
-                <font size="5" color="violet">Name</font>
-
-                <input type="text" class="name ele"placeholder="Enter your name">
-                <font size="5" color="blue">Email</font>
-                <input type="email"class="email ele" placeholder="yourmail@email.com" color="red">
-                <font size="5" color="red">Password</font>
-                <input type="password" placeholder="password">
-                <input type="password"class="password ele"placeholder="Confirm password">
-                <label>Show Password<input type="checkbox" name=" "></label>
-                <form action="index.html">
-                    <button class="clkbtn">Signup</button>
-            </div>
-
-        </div>
-    <script src="js/index.js"></script>
-     </body>
-</html>
+        <p>This is the content of the Sellers part.</p>
+      </div>
+      <div class="right-part">
+        <!-- Content for the right part -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LYwFnH3ks4Yhoby24N3WesQUFdRvLxE4Vg&s" height="230"width="330">
+        <form action="selllogin2.html">
+          <button class="clkbtn">Buyers Login</button>
+          </form>
+        <p>This is the content of the Buyers part</p>
+      </div>
+    </div>
+  </body>
+  </html>
+ 
